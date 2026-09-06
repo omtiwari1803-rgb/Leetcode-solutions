@@ -6,14 +6,14 @@ public:
         for(char ch : s){
             if(ch=='('){
                 if(depth>0){
-                    ans = ans+ch;
+                    ans.push_back(ch);
                 }
                 depth++;
             }
             else{
                 depth--;
                 if(depth>0){
-                    ans= ans+ch;
+                    ans.push_back(ch);
                 }
             }
         }
